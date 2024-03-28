@@ -28,8 +28,12 @@ body{
         margin-top: 1rem;
         padding: 1rem;
     }
-}
 
+    img{
+        max-width: 200px;
+        height: 100px;
+    }
+}
 .bg-header{
     background-color: #000;
     color: #d3d3d3;
@@ -44,6 +48,9 @@ header {
     background-color: var(--main-color);
     padding-top: 35px;
     overflow: hidden;
+    h5{
+        text-transform: uppercase;
+    }
 
     nav *{
 
