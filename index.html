@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-queries.css">
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>E-Shop</title>
@@ -16,20 +17,45 @@
             </div>
             <div class="nav-menu">
                 <ul>
-                    <li><a href="">HOME</a></li>
+                    <li class="active"><a  href="">HOME</a></li>
                     <li><a href="">SHOES</a></li>
                     <li><a href="">PROMOTIONS</a></li>
                 </ul>
             </div>
             <div class="search">
-                <i class="fa fa-bars"></i>
+                <button class="btn btn-shop" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><img src="menu-small.png" alt=""></i></button>
                 <i class="fa fa-search"></i>
+
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas-header bg-header text-center">
+                    <h5 class="offcanvas-title " id="offcanvasWithBothOptionsLabel">Feature Shoes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body bg-main">
+                    <li>Air Max 270</li>
+                    <li>V2K Run</li>
+                    <li>Jumpman MVP</li>
+                    <li>Air Jordan 1</li>
+                    <li>Air Force 1</li>
+                </div>
+                </div>
+                
+              
             </div>
         </nav>
         <div class="background-text text-center">
             <p class="text-center">NIKE</p>
         </div>
-        <img src="nike-shoes.png" alt="">
+
+        <div class="slider">
+            <img src="nike-shoes.png" alt="">
+            <img src="nike-shoes1.png" alt="">
+            <img src="nike-shoes2.png" alt="">
+        </div>
+
+        <div class="arrow left">&lt;</div>
+        <div class="arrow right">&gt;</div>
+
         <div class="social">
             <i class="fab fa-facebook"></i>
             <i class="fab fa-twitter"></i>
@@ -47,5 +73,6 @@
     </footer>
     <script src="jquery.js"></script>
     <script src="bootstrap.js"></script>
+    <script src="slider.js"></script>
 </body>
 </html>
